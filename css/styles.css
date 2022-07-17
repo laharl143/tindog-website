@@ -10,7 +10,12 @@ h1 {
     font-weight: 900;
     color: white;
     margin-bottom: 30px;
-     
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 h3 {
@@ -58,6 +63,43 @@ p {
 .col-lg-4 {
     padding: 44px;
 }
+
+.testimonial-image {
+    width: 10%;
+    border-radius: 100%;  /* this is to make the picture border round */
+    margin: 20px;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+.carousel-indicators {
+    text-align: center;
+    position: relative;
+        top: 550px;
+
+}
+
+.carousel-item {
+        padding: 7% 15%;
+}
+
+.card {
+    padding: 0;
+}
+
+.card-body {
+    padding: 0;
+    text-align: center;
+}
+
+/* NOTE! pwede nga pala ipagdugtong ang mga class selector kung may period!!!
+/* .card-title.pricing-card-title {
+    font-weight: 400; 
+}*/
+
 /***************************************ID Selector***************************************** */
 
 #title {
@@ -91,5 +133,23 @@ p {
 } */
 
 #testimonials {
-    padding: 7% 15%;
+
+    text-align: center;
+    background-color: #ef8172;
+    color: white;
+}
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+#pricing {
+    text-align: center;
+    padding:100px;
+}
+
+#pricing-card {
+    padding: 3% 2%;
 }
