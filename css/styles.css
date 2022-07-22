@@ -100,6 +100,18 @@ p {
     font-weight: 400; 
 }*/
 
+.simple-affordable {
+    margin-bottom: 80px;
+}
+
+.footer-icon {
+    padding: 0.6%
+}
+
+.copyright {
+    font-size: smaller;
+    margin-top: 20px;
+}
 /***************************************ID Selector***************************************** */
 
 #title {
@@ -114,6 +126,9 @@ p {
 #iphone-6 {
     transform: rotate(25deg);
     width: 60%;
+    position: relative;
+    left: 70px;
+    top: 50px;
 }
 /* below code: this is my initial solution below but i prefer ms. angela yu's code*/
 /* #features {                 
@@ -121,10 +136,15 @@ p {
     margin: 100px auto;
     text-align: center;
 } */
-
+/*  */
 #features {
-    padding: 7% 15%;  
+    padding: 7% 15% 1px;  /* 7% is the top, 15% is the left and right, 1% is bottom */
+    padding-top: 150px;
     text-align: center;
+    background-color: white;
+    z-index: 1;
+    position: relative;
+    bottom: 170px;  /* this is the position:relative adjustment, so that the #features div will climb 170px from the bottom */
 }
 /* This is angela yu's solution to the feature ID selector above */
 
@@ -152,4 +172,49 @@ p {
 
 #pricing-card {
     padding: 3% 2%;
+}
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 100px;
+    color: white;
+    font-family:'Montserrat', sans-serif;
+    font-size: 7.5rem;
+    line-height: 1.5;
+    font-weight: 900;
+
+}
+
+#cta-h3 {
+    padding: 1% 13%;
+    margin-bottom: 0px;
+}
+
+#footer {
+    text-align: center;
+    background-color: white;
+    padding: 50px;
+
+}
+/***************************************Media Quert***************************************** */
+
+@media (max-width: 992px) {
+   
+    #title{
+        text-align: center;
+    }
+    #iphone-6 {
+        position: static;
+        transform: rotate(0);
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1290px) {
+
+    #features {
+        position: relative;
+        bottom: 0px;
+    }
+
 }
