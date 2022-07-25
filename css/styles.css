@@ -1,10 +1,32 @@
-/***************************************Tag Selector***************************************** */
-body {
+/***************************************  Combining Selector NOTES!  ***************************************** */
+/*
+Multiple Selectors:
+h1, h2, h3, h4, h5, h6 {        <----------------------   #selector 1, selector 2 {}                 !!!! COMMA IN BETWEEN!!!!
     font-family:'Montserrat', sans-serif;
 }
 
-h1 {
+Heirarchical Selectors:         
+#title .container-fluid {       <----------------------   #(OUTER)selector 1 (INNER)selector 2 {}     !!!! NOTICE NO COMMA IN BETWEEN!!!!
+    padding-top: 3%;
+    text-align: left;
+}
+
+Combined Selectors:        <---------------------- This just means you can combine selectors in the same line
+div.container-fluid {           <----------------------   #same-line-selector-1same-line-selector-2 {}     !!!! NOTICE NO SPACE IN BETWEEN (1 & same)!!!!
+    color: red
+}
+Heirarchy Priority :   Inline style > ID selector > Class selector > HTML Tag selector
+
+                       ^ Avoid Inline style!! It is a bad practice
+*/
+/***************************************HTML Tag Selector***************************************** */
+body {
     font-family:'Montserrat', sans-serif;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Montserrat', sans-serif;
+}
+h1 {
     font-size: 3.5rem;
     line-height: 1.5;
     font-weight: 900;
@@ -19,7 +41,6 @@ h2 {
 }
 
 h3 {
-    font-family:'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 1.6rem;
 }
@@ -179,7 +200,6 @@ p {
     text-align: center;
     padding: 100px;
     color: white;
-    font-family:'Montserrat', sans-serif;
     font-size: 7.5rem;
     line-height: 1.5;
     font-weight: 900;
